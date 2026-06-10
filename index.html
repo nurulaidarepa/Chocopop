@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocopop - Puding Cokelat Premium</title>
+    <!-- Tailwind CSS untuk Desain yang Cepat & Elegan -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Font Google (Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome untuk Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+    </style>
+</head>
+<body class="bg-[#FFFDF9] text-[#3D251E]">
+
+    <!-- NAVBAR -->
+    <nav class="bg-[#3D251E] text-[#FFFDF9] sticky top-0 z-50 shadow-lg">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold tracking-wider flex items-center gap-2">
+                <i class="fa-solid fa-ice-cream text-[#FF6F61]"></i> Choco<span class="text-[#FF6F61]">pop</span>
+            </a>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#home" class="hover:text-[#FF6F61] transition">Home</a>
+                <a href="#menu" class="hover:text-[#FF6F61] transition">Menu</a>
+                <a href="#pembayaran" class="hover:text-[#FF6F61] transition">Cara Bayar</a>
+                <a href="#kontak" class="hover:text-[#FF6F61] transition">Kontak</a>
+            </div>
+            <a href="https://wa.me/6281234567890?text=Halo%20Chocopop,%20saya%20mau%20pesan%20pudingnya!" target="_blank" class="bg-[#FF6F61] text-white px-5 py-2 rounded-full font-semibold hover:bg-[#e65c50] transition shadow-md">
+                Pesan Sekarang
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="max-w-6xl mx-auto px-4 py-16 md:py-24 flex flex-col md:flex-row items-center gap-12">
+        <div class="flex-1 space-y-6 text-center md:text-left">
+            <span class="bg-[#F5E6D3] text-[#3D251E] px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide">
+                ✨ Puding Cokelat Premium Premium 100% Belgian Chocolate
+            </span>
+            <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+                Kelembutan Cokelat Asli yang <span class="text-[#FF6F61]">Meleleh</span> di Lidah.
+            </h1>
+            <p class="text-gray-600 text-lg">
+                Dibuat dengan kasih sayang, bahan-bahan premium pilihan, dan resep rahasia yang menghasilkan tekstur super lembut dan rasa cokelat yang intens.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4 pt-4">
+                <a href="#menu" class="bg-[#3D251E] text-white text-center px-8 py-3.5 rounded-xl font-semibold hover:bg-[#271713] transition shadow-lg">
+                    Lihat Menu
+                </a>
+                <a href="https://wa.me/6281234567890?text=Halo%20Chocopop,%20saya%20mau%20tanya%20varian%20pudingnya" target="_blank" class="border-2 border-[#3D251E] text-center px-8 py-3.5 rounded-xl font-semibold hover:bg-[#3D251E] hover:text-white transition">
+                    Tanya Admin (WA)
+                </a>
+            </div>
+        </div>
+        <div class="flex-1 relative">
+            <div class="absolute inset-0 bg-[#F5E6D3] rounded-full filter blur-3xl opacity-70 -z-10 transform scale-90"></div>
+            <!-- Menggunakan gambar dessert cokelat aesthetic -->
+            <img src="https://images.unsplash.com/photo-1541783245831-57d6fb0926d3?auto=format&fit=crop&w=600&q=80" alt="Chocopop Premium Pudding" class="rounded-3xl shadow-2xl mx-auto object-cover w-full max-w-md h-[450px]">
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="bg-[#F5E6D3] py-12">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div class="p-4 space-y-2">
+                <i class="fa-solid fa-leaf text-3xl text-[#3D251E]"></i>
+                <h3 class="font-bold text-xl">Bahan Alami</h3>
+                <p class="text-sm text-gray-700">Tanpa pemanis buatan dan tanpa bahan pengawet kimia.</p>
+            </div>
+            <div class="p-4 space-y-2">
+                <i class="fa-solid fa-truck-fast text-3xl text-[#3D251E]"></i>
+                <h3 class="font-bold text-xl">Sameday Delivery</h3>
+                <p class="text-sm text-gray-700">Dikirim dalam kondisi dingin agar tetap fresh sampai rumahmu.</p>
+            </div>
+            <div class="p-4 space-y-2">
+                <i class="fa-solid fa-star text-3xl text-[#3D251E]"></i>
+                <h3 class="font-bold text-xl">Rasa Bintang 5</h3>
+                <p class="text-sm text-gray-700">Kualitas restoran bintang lima dengan harga ramah kantong.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU & HARGA SECTION -->
+    <section id="menu" class="max-w-6xl mx-auto px-4 py-20">
+        <div class="text-center max-w-xl mx-auto mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Varian Menu Favorit</h2>
+            <p class="text-gray-600">Pilih tingkat kebahagiaanmu hari ini dari varian puding terbaik kami.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Menu 1 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition border border-gray-100 flex flex-col justify-between">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=500&q=80" alt="Classic Belgian Choco" class="w-full h-56 object-cover">
+                    <div class="p-6 space-y-2">
+                        <div class="flex justify-between items-center">
+                            <h3 class="font-bold text-xl">Classic Belgian</h3>
+                            <span class="bg-[#FF6F61] text-white text-xs px-2.5 py-1 rounded-full font-semibold">Best Seller</span>
+                        </div>
+                        <p class="text-gray-500 text-sm">Puding cokelat belgian murni dengan siraman vla vanilla super creamy.</p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0 flex justify-between items-center border-t border-gray-50 mt-4">
+                    <span class="text-xl font-bold text-[#3D251E]">Rp 25.000</span>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Chocopop,%20saya%20mau%20pesan%20Classic%20Belgian" target="_blank" class="bg-[#3D251E] text-white text-sm px-4 py-2 rounded-lg font-medium hover:bg-[#FF6F61] transition">Pesan (WA)</a>
+                </div>
+            </div>
+
+            <!-- Menu 2 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition border border-gray-100 flex flex-col justify-between">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1579372786545-d24232daf58c?auto=format&fit=crop&w=500&q=80" alt="Dark Choco Lava" class="w-full h-56 object-cover">
+                    <div class="p-6 space-y-2">
+                        <div class="flex justify-between items-center">
+                            <h3 class="font-bold text-xl">Dark Choco Intense</h3>
+                            <span class="bg-[#3D251E] text-white text-xs px-2.5 py-1 rounded-full font-semibold">Premium</span>
+                        </div>
+                        <p class="text-gray-500 text-sm">Rasa dark chocolate 70% yang pekat, tidak terlalu manis, cocok untuk pecinta cokelat sejati.</p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0 flex justify-between items-center border-t border-gray-50 mt-4">
+                    <span class="text-xl font-bold text-[#3D251E]">Rp 28.000</span>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Chocopop,%20saya%20mau%20pesan%20Dark%20Choco%20Intense" target="_blank" class="bg-[#3D251E] text-white text-sm px-4 py-2 rounded-lg font-medium hover:bg-[#FF6F61] transition">Pesan (WA)</a>
+                </div>
+            </div>
+
+            <!-- Menu 3 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition border border-gray-100 flex flex-col justify-between">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=500&q=80" alt="Choco Almond Crunch" class="w-full h-56 object-cover">
+                    <div class="p-6 space-y-2">
+                        <div class="flex justify-between items-center">
+                            <h3 class="font-bold text-xl">Choco Almond</h3>
+                            <span class="bg-emerald-600 text-white text-xs px-2.5 py-1 rounded-full font-semibold">New Varian</span>
+                        </div>
+                        <p class="text-gray-500 text-sm">Paduan lembutnya puding cokelat dengan taburan kacang almond panggang yang renyah.</p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0 flex justify-between items-center border-t border-gray-50 mt-4">
+                    <span class="text-xl font-bold text-[#3D251E]">Rp 30.000</span>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Chocopop,%20saya%20mau%20pesan%20Choco%20Almond" target="_blank" class="bg-[#3D251E] text-white text-sm px-4 py-2 rounded-lg font-medium hover:bg-[#FF6F61] transition">Pesan (WA)</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CARA PEMBAYARAN -->
+    <section id="pembayaran" class="bg-[#F5E6D3] py-20">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-2">Cara Pembayaran & Pemesanan</h2>
+                <p class="text-gray-600">Proses mudah dan aman, pesanan langsung diantar ke depan pintu rumahmu.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                <div class="bg-white p-6 rounded-2xl shadow-sm">
+                    <div class="w-12 h-12 bg-[#3D251E] text-white rounded-full flex items-center justify-center font-bold text-lg mx-auto mb-4">1</div>
+                    <h4 class="font-semibold mb-2">Pilih Varian Menu</h4>
+                    <p class="text-sm text-gray-500">Klik tombol pesan pada menu di atas untuk langsung terhubung ke WhatsApp kami.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm">
+                    <div class="w-12 h-12 bg-[#3D251E] text-white rounded-full flex items-center justify-center font-bold text-lg mx-auto mb-4">2</div>
+                    <h4 class="font-semibold mb-2">Konfirmasi & Bayar</h4>
+                    <p class="text-sm text-gray-500">Kirim format alamat dan lakukan transfer via Bank (BCA/Mandiri) atau E-Wallet (Gopay/OVO/Dana).</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm">
+                    <div class="w-12 h-12 bg-[#3D251E] text-white rounded-full flex items-center justify-center font-bold text-lg mx-auto mb-4">3</div>
+                    <h4 class="font-semibold mb-2">Puding Dikirim</h4>
+                    <p class="text-sm text-gray-500">Kurir instan/sameday kami akan mengantarkan puding dalam keadaan dingin & segar.</p>
+                </div>
+            </div>
+
+            <!-- Logo E-Wallet/Bank Simpel -->
+            <div class="mt-12 flex justify-center items-center gap-6 text-2xl text-gray-400 grayscale opacity-70">
+                <span class="font-bold text-sm tracking-wider">SUPPORTED PAYMENTS:</span>
+                <i class="fa-solid fa-credit-card" title="Transfer Bank"></i>
+                <i class="fa-solid fa-wallet" title="E-Wallet"></i>
+                <span class="font-bold text-base">BCA / MANDIRI / DANA / OVO</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- KONTAK & FOOTER SECTION -->
+    <footer id="kontak" class="bg-[#3D251E] text-[#FFFDF9] pt-16 pb-8">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+            <!-- Kolom Brand -->
+            <div class="space-y-4">
+                <h3 class="text-2xl font-bold tracking-wider"><i class="fa-solid fa-ice-cream text-[#FF6F61]"></i> Choco<span class="text-[#FF6F61]">pop</span></h3>
+                <p class="text-gray-400 text-sm">Menghadirkan kelezatan dessert cokelat premium terbaik langsung ke tempat Anda sejak 2024.</p>
+                <div class="flex space-x-4 pt-2">
+                    <a href="#" class="text-gray-400 hover:text-white text-xl"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white text-xl"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white text-xl"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+
+            <!-- Kolom Operasional -->
+            <div class="space-y-4">
+                <h4 class="font-semibold text-lg text-[#FF6F61]">Jam Operasional</h4>
+                <ul class="text-sm text-gray-400 space-y-2">
+                    <li><strong class="text-white">Senin - Sabtu:</strong> 09.00 - 18.00 WIB</li>
+                    <li><strong class="text-white">Minggu:</strong> 10.00 - 15.00 WIB</li>
+                    <li class="text-xs italic text-[#FF6F61]">*Pengiriman dari Kebayoran, Jakarta Selatan</li>
+                </ul>
+            </div>
+
+            <!-- Kolom Hubungi Kami LANGSUNG WA -->
+            <div class="space-y-4">
+                <h4 class="font-semibold text-lg text-[#FF6F61]">Hubungi Kami</h4>
+                <p class="text-sm text-gray-400">Ada pertanyaan atau pesanan khusus/katering acara? Langsung chat kami!</p>
+                <a href="https://wa.me/62089508201339?text=Halo%20Chocopop,%20saya%20mau%20tanya%20mengenai%20pesanan%20katering/acara." target="_blank" class="inline-flex items-center gap-3 bg-[#25D366] text-white px-6 py-3 rounded-xl font-semibold hover:bg-[#20ba59] transition shadow-md w-full justify-center">
+                    <i class="fa-brands fa-whatsapp text-xl"></i> Chat WhatsApp Sekarang
+                </a>
+            </div>
+        </div>
+
+        <hr class="border-gray-800 my-6">
+
+        <div class="max-w-6xl mx-auto px-4 text-center text-xs text-gray-500">
+            &copy; 2026 Chocopop Premium Pudding. All Rights Reserved. Built with ❤️ for chocolate lovers.
+        </div>
+    </footer>
+
+</body>
+</html>
